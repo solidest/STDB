@@ -40,5 +40,5 @@ STDB(const char* file_path)
 - lrange(const std::string &key, long long begin, long long end, vector<pair<long long, string>> *ret, long long step=0)
 - lrangei(const std::string &key, long long begin, long long end, vector<pair<long long, int>> *ret, long long step=0)
 - lrangeb(const std::string &key, long long begin, long long end, vector<pair<long long, bool>> *ret, long long step=0)
-- 说明1：读取的范围为时间戳位于 [begin, end) 之间的记录
+- 说明1: 读取的范围为时间戳位于 [begin, end) 之间的记录
 - 说明2: 参数step用于指定时间戳步长，0表示连续读取；大于0的整数表示间隔step读取一个条记录
