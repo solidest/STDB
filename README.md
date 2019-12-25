@@ -13,7 +13,7 @@ STDB(const char* file_path)
 #### 保存数据记录
 ##### set(const string &key, long long timestamp, const string &val)
 - 保存一条记录
-- key 为名称主键，通常为通道接口名称，双通道接口注意区分in和out
+- key 为名称主键，通常为通道接口名称，双工通道接口注意区分in和out
 - timestamp 为时间戳
 - val 为要保存的具体数据，是二进制安全的
 
