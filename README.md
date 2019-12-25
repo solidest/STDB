@@ -1,5 +1,5 @@
 # STDB
-一个轻量化的时序数据库，基于rocksdb进行封装
+Simulation Test database是一个轻量化的时序数据库，基于rocksdb进行封装；主要目的是为嵌入式设备接口仿真、测试场景下，提供按时序记录和访问数据的轻量化API
 
 # 构建方法
 - 首先按照[这里的说明](https://github.com/facebook/rocksdb)编译rocksdb
