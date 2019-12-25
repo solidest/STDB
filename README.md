@@ -15,13 +15,13 @@ STDB(const char* file_path)
 - 保存一条记录
 - key 为名称主键，通常为通道接口名称，双工通道接口注意区分in和out
 - timestamp 为时间戳
-- val 为要保存的具体数据，是二进制安全的
+- val 为要保存的具体数据，二进制安全
 
 ##### seti(const string &key, long long timestamp, const int val)
-- 保存整数值，常用于保存模拟量采集卡数据
+- 保存整数值，常用于保存模拟量采集数据
 
 ##### setb(const string &key, long long timestamp, const bool val)
-- 保存布尔值，常用于保存信号量量采集数据
+- 保存布尔值，常用于保存信号量采集数据
 
 #### 读取数据记录
 
@@ -34,7 +34,7 @@ STDB(const char* file_path)
 - lget(const std::string &key, long long begin, int limit, vector<pair<long long, string>> *ret)
 - lgeti(const std::string &key, long long begin, int limit, vector<pair<long long, int>> *ret)
 - lgetb(const std::string &key, long long begin, int limit, vector<pair<long long, bool>> *ret)
-- 说明：limit为要读取的记录数，可以为负数，表示最新的limit条数据
+- 说明：limit为要读取的记录数；可以为负数，表示最新的limit条数据
 
 #### 读取指定时间戳范围内的多条记录
 - lrange(const std::string &key, long long begin, long long end, vector<pair<long long, string>> *ret, long long step=0)
